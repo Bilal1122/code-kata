@@ -11,12 +11,7 @@ import { fetchBusinessBalanceSheet } from "../../actions/business";
 import { submitApplication } from "../../actions/application";
 
 const Application = () => {
-  const [application, setApplication] = useState<LoanApplication>({
-    buisnessName: "Bilal",
-    establishedYear: 2012,
-    loanAmount: 200,
-    provider: Provider.MYOB
-  })
+  const [application, setApplication] = useState<LoanApplication>()
   const [balanceSheet, setBalanceSheet] = useState<BalanaceSheet[]>([])
   const [decision, setDecision] = useState<ApplicationDecision>()
   const [preview, setPreview] = useState(false)
