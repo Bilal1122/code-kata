@@ -41,7 +41,7 @@ const Preview = ({ application, balanceSheet, loading, onSubmit, onBackClick }: 
       <Table headers={tableHeaders} cells={balanceSheet} />
 
       <div className="mt-6 flex justify-end">
-        <Button label="Back" type="submit" loading={loading} onClick={onBackClick} classname="mr-4 !bg-white text-blue-700 border border-blue-700" />
+        <Button label="Back" type="submit" loading={loading} onClick={onBackClick} classname="mr-4 !bg-white !text-blue-700 border border-blue-700" />
         <Button label="Submit" type="submit" loading={loading} onClick={onSubmit} />
       </div>
     </>
